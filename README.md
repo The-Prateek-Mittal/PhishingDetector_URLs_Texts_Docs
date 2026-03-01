@@ -16,21 +16,21 @@ Steps :
    nano docker-compose.yml
  
 2. In docker-compose.yml file paste :  
-   services:
-  backend:
-    image: theprateekmittal/campusshield-backend:latest
-    ports:
-      - "8000:8000"
-    restart: always
+   services:  
+  backend:  
+    image: theprateekmittal/campusshield-backend:latest  
+    ports:  
+      - "8000:8000"  
+    restart: always  
 
-  frontend:
-    image: theprateekmittal/campusshield-frontend:latest
-    ports:
-      - "80:80"
-    depends_on:
-      - backend
-    restart: always
+  frontend:  
+    image: theprateekmittal/campusshield-frontend:latest  
+    ports:  
+      - "80:80"  
+    depends_on:  
+      - backend  
+    restart: always  
 
-  3. Now stay in the folder and run the command : docker compose up -d
+  3. Now stay in the folder and run the command : docker compose up -d  
 
 And then you are just done and project will start. We have added this feature for easy deployments and portability.
