@@ -10,12 +10,12 @@ How to execute :
 # Running our project without any dependencies.
 As we have containerized our project so one can run our project directly without any dependencies, just you need to have docker engiene.
 Steps : 
-1. Create a dir/forlder to pull the project from dockerhub
+1. Create a dir/forlder to pull the project from dockerhub  
    mkdir campusshield-deploy
    cd campusshield-deploy
    nano docker-compose.yml
  
-2. In docker-compose.yml file paste :
+2. In docker-compose.yml file paste :  
    services:
   backend:
     image: theprateekmittal/campusshield-backend:latest
